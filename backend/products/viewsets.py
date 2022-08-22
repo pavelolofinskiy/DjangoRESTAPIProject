@@ -19,9 +19,9 @@ class ProductViewSet(viewsets.ModelViewSet):
 
 
 class ProductGenericViewSet(
-        viewsets.GenericViewSet,
         mixins.ListModelMixin,
-        mixins.RetrieveModelMixin):
+        mixins.RetrieveModelMixin,
+        viewsets.GenericViewSet):
     '''
     get -> list -> Queryset
     get -> retrieve -> Product Instance Detail View
