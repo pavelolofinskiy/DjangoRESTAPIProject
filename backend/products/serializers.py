@@ -19,13 +19,11 @@ class ProductSerializer(serializers.ModelSerializer):
             'edit_url',
             'pk',
             'title',
-            'name',
             'content',
             'price',
             'sale_price',
             'my_discount'
         ]
-
     #def validate_title(self, value):
     #    request = self.context.get('request')
     #    user = request.user
